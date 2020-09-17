@@ -661,6 +661,7 @@ spec:
         limits:
           cpu: "{cores}"
           memory: "{memory}Mi"
+          nvidia.com/gpu: 1
         requests:
           cpu: {cpu_shares}m
           memory: 500Mi
