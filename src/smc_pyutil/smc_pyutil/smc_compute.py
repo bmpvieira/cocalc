@@ -665,6 +665,7 @@ spec:
         requests:
           cpu: {cpu_shares}m
           memory: 500Mi
+          nvidia.com/gpu: 1
       volumeMounts:
         - name: home
           mountPath: /home/user
