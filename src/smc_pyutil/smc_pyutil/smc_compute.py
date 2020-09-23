@@ -659,12 +659,12 @@ spec:
         failureThreshold: 20
       resources:
         limits:
-          cpu: "{cores}"
-          memory: "{memory}Mi"
+          cpu: "4"
+          memory: "14Gi"
           nvidia.com/gpu: 1
         requests:
-          cpu: {cpu_shares}m
-          memory: 500Mi
+          cpu: 4
+          memory: 14Gi
           nvidia.com/gpu: 1
       volumeMounts:
         - name: home
