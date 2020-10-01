@@ -640,6 +640,7 @@ spec:
   containers:
     - name: "{pod_name}"
       image: "{registry}/cocalc-kubernetes-project"
+      imagePullPolicy: IfNotPresent
       env:
         - name: COCALC_PROJECT_ID
           value: "{project_id}"
@@ -660,11 +661,11 @@ spec:
       resources:
         limits:
           cpu: "4"
-          memory: "14Gi"
+          memory: "12Gi"
           nvidia.com/gpu: 1
         requests:
           cpu: 4
-          memory: 14Gi
+          memory: 12Gi
           nvidia.com/gpu: 1
       volumeMounts:
         - name: home
